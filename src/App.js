@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NotFound from './components/NotFound/NotFound';
 import Reviews from './components/Reviews/Reviews';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           </Routes>
 
         </div>
+        <Footer></Footer>
 
 
       </BrowserRouter>

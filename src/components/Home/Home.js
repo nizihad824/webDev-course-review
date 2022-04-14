@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Row, Spinner } from 'react-bootstrap';
-import Reviews from '../Reviews/Reviews';
+import {  useNavigate } from 'react-router-dom';
+import Review from '../Review/Review';
+
 import './Home.css'
 
 const Home = () => {
     const [reviews, setReviews] = useState([]);
+    const navigate =useNavigate();
+    // load data
     useEffect(() => {
         fetch('./reviews.json')
             .then(res => res.json())
             .then(data => setReviews(data))
 
 
-    }, [])
+    }, []);
+    // handle button
+    const handleReviews =()=>{
+    navigate('/reviews')
+    }
     return (
         <div className="d-flex justify-content-center">
             {/* Showing spinner when reviews are loading */}
@@ -36,17 +44,22 @@ const Home = () => {
                         <div>
                             <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
                         </div>
-                        <Row md={4} xs={1} className="m-5 p-5 pt-0 gy-4 w-100">
+                        <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                             {/* Showing offer dynamically */}
                             {
-                                reviews?.map(review => <Reviews
+                                reviews?.map(review => <Review
                                     key={reviews.id} course={review}>
-                                    {/* <button onClick={handleOffer} className="btn btn-outline-secondary">View Offer</button> */}
-                                </Reviews>
+                                   
+                                    
+                                    
+                                </Review>
+                                
 
                                 )
                             }
+                             <Button onClick={handleReviews} className=''>Show More</Button>
                         </Row>
+                       
                     </div>
             }
         </div>
