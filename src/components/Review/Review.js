@@ -6,7 +6,7 @@ import './Review.css'
 const Review = (props) => {
     const { name, reviews, ratings, img } = props.review;
     return (
-        <div className='container-card '>
+        <div className='container-card mb-5'>
             <div className='card-style text-white'>
                 <div className=' d-flex justify-content-center'>
                 <img src={img} alt="" />
