@@ -48,7 +48,7 @@ const Home = () => {
                             {/* Showing offer dynamically */}
                             {
                                 reviews?.map(review => <Review
-                                    key={reviews.id} course={review}>
+                                    key={reviews.id} review={review}>
                                    
                                     
                                     
