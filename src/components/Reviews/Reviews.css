@@ -1,0 +1,27 @@
+.card-style:hover{
+    transform: scale(.98);
+  cursor: pointer;
+  
+}
+.container-card{
+    display: flex;
+    justify-content: center;
+    margin-left:10px ;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:rgb(22 4 56) ;
+    
+   
+}
+.card-style img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+}
+.name{
+    
+}

@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <Navbar bg="secondary" variant="dark" expand="lg">
+            <Navbar style={{backgroundColor:'#0f0826'}} variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="" className="fw-bold fs-lg" style={{ fontFamily: 'cursive' }}>
                         WebDevelopement Course
@@ -18,6 +18,10 @@ const Header = () => {
                                 fontWeight: "bold",
                                 color: "#fafbfa"
                             }} >HOME</NavLink>
+                        <NavLink to="/reviews" activeStyle={{
+                                fontWeight: "bold",
+                                color: "#fafbfa"
+                            }} >REVIEWS</NavLink>
                             <NavLink activeStyle={{
                                 fontWeight: "bold",
                                 color: "#fafbfa"

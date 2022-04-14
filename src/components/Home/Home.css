@@ -1,0 +1,23 @@
+.body{
+    background-color: #0f0826;
+
+}
+.orange{
+    color:tomato;
+}
+.header-text{
+    font-family:sans-serif;
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.header-img:hover{
+    transform: scale(1.04);
+  cursor: pointer;
+  }
+  .header-img{
+    border-radius: 10px;
+  
+
+  }
