@@ -6,6 +6,10 @@
 
 .nav-link a:hover{
     color: #fafbfa;
+    cursor: pointer;
+}
+.nav-link{
+    
 }
 
 .selected{

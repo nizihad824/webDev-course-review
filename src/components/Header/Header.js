@@ -9,24 +9,27 @@ const Header = () => {
             <Navbar bg="secondary" variant="dark" expand="lg">
                 <Container>
                     <Navbar.Brand href="" className="fw-bold fs-lg" style={{ fontFamily: 'cursive' }}>
-                        WebDevelopement School
+                        WebDevelopement Course
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav className='nav-link'>
-                        <NavLink to="/home" className={(navData) => (navData.isActive ? "active-style" : 'none')}>Home</NavLink>
+                        <Nav className='nav-link ms-auto '>
+                        <NavLink to="/home" activeStyle={{
+                                fontWeight: "bold",
+                                color: "#fafbfa"
+                            }} >HOME</NavLink>
                             <NavLink activeStyle={{
                                 fontWeight: "bold",
                                 color: "#fafbfa"
-                            }} to='/dashboard'>Dashboard</NavLink>
+                            }} to='/dashboard'>DASHBOARD</NavLink>
                             <NavLink activeStyle={{
                                 fontWeight: "bold",
                                 color: "#fafbfa"
-                            }} to='/locations'>Blogs</NavLink>
+                            }} to='/blogs'>BLOGS</NavLink>
                             <NavLink activeStyle={{
                                 fontWeight: "bold",
                                 color: "#fafbfa"
-                            }} to='/about'>About</NavLink>
+                            }} to='/about'>ABOUT</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

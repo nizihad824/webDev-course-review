@@ -1,0 +1,50 @@
+[
+    {
+       "id":11,
+       "name":"",
+       "reviews":"Very interesting course, better done when in an academic context and with an ongoing project to carry out the exercices for. If you don't have access to a university library, you will be very limited, but the course presents some alternatives for us professionals who are still interested in researching and documenting our work with a more scientific approach.",
+       "ratings":"399",
+       "img":"https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aHVtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+       "id":22,
+       "name":"",
+       "reviews":"I really liked this course - it was short, useful and to the point. Would love to see a follow up on how to take notes of lectures, books and journal articles so that they can be used to build an essay.",
+       "ratings":"499",
+       "img":"https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aHVtYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+       "id":33,
+       "name":"",
+       "reviews":"The course was very comprehensive and easy to understand. The instructors made sure that they are giving the information in a way that won't make me confused. Thank you so much for this great course!",
+       "ratings":"499",
+       "img":"https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGh1bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+       "id":44,
+       "name":"German Examination Training",
+       "reviews":" love this course. It helps me with my teaching and personal development. Besides, I know several reference management tools from this course. Storing the documents is really complicated and makes me in a mess. Thank you for your tutoring and sharing.",
+       "ratings":"349",
+       "img":"https://media.istockphoto.com/photos/smiling-indian-business-man-working-on-laptop-at-home-office-young-picture-id1307615661?b=1&k=20&m=1307615661&s=170667a&w=0&h=Zp9_27RVS_UdlIm2k8sa8PuutX9K3HTs8xdK0UfKmYk="
+        
+    },
+    {
+       "id":44,
+       "name":"German Examination Training",
+       "reviews":" love this course. It helps me with my teaching and personal development. Besides, I know several reference management tools from this course. Storing the documents is really complicated and makes me in a mess. Thank you for your tutoring and sharing.",
+       "ratings":"349",
+       "img":"https://media.istockphoto.com/photos/young-man-with-laptop-and-coffee-working-indoors-home-office-concept-picture-id1334702614?b=1&k=20&m=1334702614&s=170667a&w=0&h=Ea5KZt7q8D_dm1kHuNG7__R8J--thzE-Yj7Q9nXMg6E="
+        
+    },
+    {
+       "id":44,
+       "name":"German Examination Training",
+       "reviews":" love this course. It helps me with my teaching and personal development. Besides, I know several reference management tools from this course. Storing the documents is really complicated and makes me in a mess. Thank you for your tutoring and sharing.",
+       "ratings":"349",
+       "img":"https://media.istockphoto.com/photos/young-woman-with-backpack-outdoors-picture-id1344837084?b=1&k=20&m=1344837084&s=170667a&w=0&h=2p5UshNVhibqLwlRaINCyn8LRoAa-JHmX8XXiJEPYXE="
+        
+    }
+ ]
