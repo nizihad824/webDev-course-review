@@ -24,7 +24,7 @@ const Reviews = () => {
                 <div className='body'>
                     
                     <div>
-                        <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
+                        <h1 className='d-flex justify-content-center py-5 header-text'> All Student's FeedBack</h1>
                     </div>
                     <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                         {/* Showing offer dynamically */}

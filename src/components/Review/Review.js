@@ -14,7 +14,14 @@ const Review = (props) => {
                 <h3 className='name d-flex justify-content-center text-white'>{name}</h3>
                 
                 <p>{reviews}</p>
+                <div className='d-flex justify-content-center text-warning'>
+                <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
                <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
+               <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
+               <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
+               <span>  <FontAwesomeIcon icon={faStar}></FontAwesomeIcon></span>
+                </div>
+              
 
             </div>
             </div>

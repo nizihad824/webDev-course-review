@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListGroup, ListGroupItem, Row } from 'react-bootstrap';
+import { ListGroup, Row } from 'react-bootstrap';
 import './Blogs.css'
 
 const Blogs = () => {
