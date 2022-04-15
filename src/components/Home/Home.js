@@ -6,9 +6,17 @@ import Review from '../Review/Review';
 import './Home.css'
 
 const Home = () => {
+    const [reviewsA, setReviewsA] = useState([]);
     const [reviews, setReviews] = useState([]);
     const navigate =useNavigate();
     // load data
+    useEffect(() => {
+        fetch('./allReviews.json')
+            .then(res => res.json())
+            .then(data => setReviewsA(data))
+
+
+    }, []);
     useEffect(() => {
         fetch('./reviews.json')
             .then(res => res.json())
@@ -44,11 +52,13 @@ const Home = () => {
                         <div>
                             <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
                         </div>
-                        <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
+                        {reviews.length===3 ? <>
+                        
+                            <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                             {/* Showing offer dynamically */}
                             {
                                 reviews?.map(review => <Review
-                                    key={reviews.id} review={review}>
+                                    key={review.id} review={review}>
                                    
                                     
                                     
@@ -59,6 +69,25 @@ const Home = () => {
                             }
                              <Button onClick={handleReviews} className=''>Show More</Button>
                         </Row>
+
+
+                        </> :
+                        <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
+                            {/* Showing offer dynamically */}
+                            {
+                                reviewsA?.map(review => <Review
+                                    key={review.id} review={review}>
+                                   
+                                    
+                                    
+                                </Review>
+                                
+
+                                )
+                            }
+                             <Button onClick={handleReviews} className=''>Show More</Button>
+                        </Row>
+}
                        
                     </div>
             }

@@ -4,7 +4,7 @@ import React from 'react';
 import './Review.css'
 
 const Review = (props) => {
-    const { name, reviews, ratings, img } = props.review;
+    const { name, reviews, img } = props.review;
     return (
         <div className='container-card mb-5'>
             <div className='card-style text-white'>

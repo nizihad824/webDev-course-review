@@ -14,26 +14,12 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className='nav-link ms-auto '>
-                        <NavLink to="/home" activeStyle={{
-                                fontWeight: "bold",
-                                color: "#fafbfa"
-                            }} >HOME</NavLink>
-                        <NavLink to="/reviews" activeStyle={{
-                                fontWeight: "bold",
-                                color: "#fafbfa"
-                            }} >REVIEWS</NavLink>
-                            <NavLink activeStyle={{
-                                fontWeight: "bold",
-                                color: "#fafbfa"
-                            }} to='/dashboard'>DASHBOARD</NavLink>
-                            <NavLink activeStyle={{
-                                fontWeight: "bold",
-                                color: "#fafbfa"
-                            }} to='/blogs'>BLOGS</NavLink>
-                            <NavLink activeStyle={{
-                                fontWeight: "bold",
-                                color: "#fafbfa"
-                            }} to='/about'>ABOUT</NavLink>
+                        <NavLink to="/home">HOME</NavLink>
+                        <NavLink to="/reviews"
+                             >REVIEWS</NavLink>
+                            <NavLink  to='/dashboard'>DASHBOARD</NavLink>
+                            <NavLink to='/blogs'>BLOGS</NavLink>
+                            <NavLink  to='/about'>ABOUT</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
