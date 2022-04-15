@@ -47,39 +47,28 @@ const Home = () => {
                         <div>
                             <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
                         </div>
-                        {reviews.length===2 ? <>
-                        
-                            <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
+                        {reviews.length===3 ? <>
+                        {/* will be shown three results if you set reviews.length ===4 it will show 6 result */}
+                        <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                             {/* Showing offer dynamically */}
                             {
                                 reviews?.map(review => <Review
                                     key={review.id} review={review}>
                                    
-                                    
-                                    
                                 </Review>
-                                
-
-                                )
-                            }
+                                )}
                              <Button onClick={handleReviews} className=''>Show More</Button>
                         </Row>
 
 
                         </> :
                         <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
-                            {/* Showing offer dynamically */}
+                            {/* Showing reviews dynamically */}
                             {
                                 reviewsA?.map(review => <Review
                                     key={review.id} review={review}>
-                                   
-                                    
-                                    
-                                </Review>
-                                
-
-                                )
-                            }
+                                   </Review>
+                                )}
                              <Button onClick={handleReviews} className=''>Show More</Button>
                         </Row>
 }
