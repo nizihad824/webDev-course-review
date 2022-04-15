@@ -47,20 +47,20 @@ const Home = () => {
                         <div>
                             <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
                         </div>
+                        {/* Condition Rendering */}
                         {reviews.length===3 ? <>
                         {/* will be shown three results if you set reviews.length ===4 it will show 6 result */}
-                        <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
-                            {/* Showing offer dynamically */}
+                        <Row md={4} xs={1} className=" p-5 pt-0 gy-0 mb-5 w-100 d-flex justify-content-center">
+                            {/* Showing result 3 */}
                             {
                                 reviews?.map(review => <Review
                                     key={review.id} review={review}>
                                    
                                 </Review>
                                 )}
-                             <Button onClick={handleReviews} className=''>Show More</Button>
+                             <Button onClick={handleReviews} className='mb-5'>Show More</Button>
                         </Row>
-
-
+                        {/* showing result 6 */}
                         </> :
                         <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                             {/* Showing reviews dynamically */}
@@ -68,8 +68,9 @@ const Home = () => {
                                 reviewsA?.map(review => <Review
                                     key={review.id} review={review}>
                                    </Review>
+                                   
                                 )}
-                             <Button onClick={handleReviews} className=''>Show More</Button>
+                             <Button onClick={handleReviews} className='mb-2'>Show More</Button>
                         </Row>
 }
                        

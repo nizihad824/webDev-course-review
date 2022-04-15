@@ -23,7 +23,7 @@ const Reviews = () => {
                     <div>
                         <h1 className='d-flex justify-content-center py-5 header-text'> All Student's FeedBack</h1>
                     </div>
-                    <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
+                    <Row md={4} xs={1} className=" p-3 pt-0 gy-0 w-100 mb-5 d-flex justify-content-center">
                         {/* Showing offer dynamically */}
                         {
                             reviews?.map(review => <Review
