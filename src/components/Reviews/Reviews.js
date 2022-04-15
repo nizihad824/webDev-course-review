@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Spinner } from 'react-bootstrap';
+import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
+
+    // load data from custom hooks
+    const [reviews, setReviews] = useReviews([]);
     
     // load data
-    useEffect(() => {
-        fetch('./allReviews.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-
-
-    }, []);
+   
     return (
         <div className="d-flex justify-content-center">
         {/* Showing spinner when reviews are loading */}
@@ -36,7 +33,7 @@ const Reviews = () => {
 
                             )
                         }
-                        {/*  <Button onClick={handleReviews} className=''>Show More</Button> */}
+                       
                     </Row>
                    
                 </div>

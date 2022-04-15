@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Row, Spinner } from 'react-bootstrap';
 import {  useNavigate } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 
 import './Home.css'
 
 const Home = () => {
-    const [reviewsA, setReviewsA] = useState([]);
+    /* load data from  custom hooks */
+    const [reviewsA, setReviewsA] = useReviews([]);
     const [reviews, setReviews] = useState([]);
     const navigate =useNavigate();
-    // load data
-    useEffect(() => {
-        fetch('./allReviews.json')
-            .then(res => res.json())
-            .then(data => setReviewsA(data))
-
-
-    }, []);
+    
     useEffect(() => {
         fetch('./reviews.json')
             .then(res => res.json())
@@ -52,7 +47,7 @@ const Home = () => {
                         <div>
                             <h1 className='d-flex justify-content-center py-5 header-text'>Student's FeedBack</h1>
                         </div>
-                        {reviews.length===3 ? <>
+                        {reviews.length===2 ? <>
                         
                             <Row md={4} xs={1} className=" p-3 pt-0 gy-4 w-100 d-flex justify-content-center">
                             {/* Showing offer dynamically */}
